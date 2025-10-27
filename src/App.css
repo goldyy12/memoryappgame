@@ -1,38 +1,98 @@
-.App {
+.pokediv {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); 
+  gap: 30px;
+  justify-items: center;
+}
+body {
+  background-image: url(https://images.template.net/375613/Pokemon-Environment-Background-Template-edit-online.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+.title{
+  color: rgb(21, 153, 247);
+  height: 50px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.pokediv img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokediv p {
   text-align: center;
+  margin: 5px 0 0 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+  background-color: #97b2d52b;
+  border-radius: 20px;
+  padding: 5px;
+
+}
+.gamesscore{
+  
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #070604;
+  color: #2a75bb;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-size: large;
+
+}
+.gamesscore1{
+  
+  position: fixed;
+  top: 15px;
+  right: 180px;
+  background: #070604;;
+  color: #2a75bb;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  font-size: large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.restart-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #afaeac;
+  color: #2a75bb;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.restart-btn:hover {
+  background-color: #070604;
+}
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }
